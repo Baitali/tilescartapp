@@ -17,7 +17,7 @@ export default function RegisterUser() {
     <form onSubmit={handleSubmit(onSubmit)} className={styles.loginStyle}>
       
     <h3>User Registration</h3>
-    
+    <br/><br/>
     <label style={{width:80, float:'left'}}>Full Name  </label>
     <input {...register("fullname", {required:"This is mandatory field"})}></input>
     {errors.fullname && <h6 style={{color:'red'}}>{errors.fullname.message}</h6>}
@@ -37,7 +37,7 @@ export default function RegisterUser() {
     <input type='password' {...register("password", {required:"This is mandatory field"})}></input>
     {errors.password && <h6 style={{color:'red'}}>{errors.password.message}</h6>}
     <br/><br/>
-    <button type='submit'>Register</button>
+    <button className={styles.loginBtn} type='submit'>Register</button>
     <br/><br/>
 </form>
   )

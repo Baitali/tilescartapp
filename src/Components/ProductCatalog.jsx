@@ -7,9 +7,6 @@ import CatalogueHeader from './CatalogueHeader';
 export default function ProductCatalog() {
 
 
-      const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(false)
-//   const [cart, setCart] = useLocalStorageState<CartProps>('cart', {})
     const [cart, setCart] = useState({});
     const [prodCount, setProdCount] = useState(0);
     const [prodQuantity, setProdQuantity] = useState(0);
@@ -43,7 +40,7 @@ export default function ProductCatalog() {
 
   return (
     <>
-    <CatalogueHeader products={cart.product}> </CatalogueHeader>
+    <CatalogueHeader productsCount={prodCount}> </CatalogueHeader>
     <div className={styles.container}>
         <h3>List of Tiles</h3>
         

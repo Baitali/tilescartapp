@@ -13,7 +13,7 @@ export default function CartWidget(props) {
       });
     }
 
-    const prodSize = props?.productsCount?.products || 0;
+    const prodSize = props?.productsCount || 0;
   return (
     <button className={styles.container} onClick={navigateToCart}>
       <span className={styles.productsCount}>{prodSize}</span>

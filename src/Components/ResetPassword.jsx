@@ -46,8 +46,8 @@ export default function ResetPassword() {
       {errors.confirmPassword && <h6 style={{color:'red'}}>{errors.confirmPassword}</h6>}
       <br/><br/>
       <br/><br/>
-      <button type='submit'>Reset</button>
-      <button onClick={onSubmit}>Back</button>
+      <button className={styles.loginBtn} type='submit'>Update Password</button>
+      <button className={styles.loginBtn} onClick={onSubmit}>Back</button>
 
       <br/><br/>
   </form>

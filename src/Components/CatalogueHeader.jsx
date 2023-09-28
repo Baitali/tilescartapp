@@ -15,7 +15,7 @@ export default function CatalogueHeader(props) {
           <img src={logo} className={styles.logo} alt="Tiles Cart Application" />
         </Link>
       </div>
-        <CartWidget productsCount={props} />
+        <CartWidget productsCount={props.productsCount} />
     </header>
     </>
   )
