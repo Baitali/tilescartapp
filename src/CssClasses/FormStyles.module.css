@@ -1,0 +1,31 @@
+.loginStyle{
+    text-align: center;
+    border: solid;
+    width:300px;
+    height: fit-content;
+    position: relative;
+}
+
+.userProfile{
+    text-align: center;
+    width:300px;
+    height: fit-content;
+}
+
+.tileList{
+    border: 2px solid black;
+    padding: 8px;
+    width: 100%;
+    
+}
+
+.loginBtn{
+    background-color: gray;
+    width: 10rem;
+    padding: .5rem;
+    font-size: 1.1em;
+    border-radius: 25px;
+    border-color: #D5D9D9;
+    border-style: solid;
+    border-width: 1px;
+}
